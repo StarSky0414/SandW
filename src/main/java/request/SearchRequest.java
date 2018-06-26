@@ -33,4 +33,13 @@ public class SearchRequest {
         return jsonObject.toString();
     }
 
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST, value = "/search/brandlist")
+    public String brandList(){
+        HashMap<String, ArrayList> bigRangeList = SearchManager.getBrandList();
+//        JSONObject jsonObject = new JSONObject();
+//        jsonObject.put("brandlist",bigRangeList);
+        return JSONObject.toJSON(bigRangeList).toString();
+    }
+
 }

@@ -3,8 +3,6 @@ package manager;
 import db.po.AddressBookBean;
 import db.po.UserAddressOptionBean;
 import provider.AddressProvider;
-
-import java.util.HashMap;
 import java.util.List;
 
 public class AddressManager {

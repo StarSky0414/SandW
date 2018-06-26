@@ -3,6 +3,7 @@ package manager;
 import provider.SearchProvider;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -26,8 +27,24 @@ public class SearchManager {
         return resultList;
     }
 
-    public static List<String> getBrandList(){
+    public static HashMap<String, ArrayList> getBrandList(){
         List<String> brandList = SearchProvider.getBrandList();
-        return brandList;
+        Collections.sort(brandList);
+        HashMap<String, ArrayList> resultMap = new HashMap<String, ArrayList>();
+        for (String s :
+                brandList) {
+            char c = s.charAt(0);
+            c = Character.toUpperCase(c);
+            if (resultMap.containsKey(String.valueOf(c))) {
+                ArrayList arrayList = resultMap.get(String.valueOf(c));
+                arrayList.add(s);
+                resultMap.put(String.valueOf(c),arrayList);
+            }else {
+                ArrayList arrayList = new ArrayList();
+                arrayList.add(s);
+                resultMap.put(String.valueOf(c),arrayList);
+            }
+        }
+        return resultMap;
     }
 }

@@ -2,6 +2,8 @@ package manager;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -12,10 +14,10 @@ public class BrandManagerTest {
 
     @Test
     public void getBrandListTest(){
-        List<String> brandList = SearchManager.getBrandList();
-        for (String s :
-                brandList) {
-            System.out.println(s);
-        }
+        HashMap<String, ArrayList> brandList = SearchManager.getBrandList();
+//        for (String s :
+//                brandList) {
+//            System.out.println(s);
+//        }
     }
 }
