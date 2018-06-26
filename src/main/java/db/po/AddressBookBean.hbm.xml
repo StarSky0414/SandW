@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="db.po.AddressBookBean" table="address_book" schema="sandw">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+            <generator class="identity"/>
+        </id>
+        <property name="userNum">
+            <column name="user_num" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="surName">
+            <column name="sur_name" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="name">
+            <column name="name" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="country">
+            <column name="country" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="province">
+            <column name="province" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="city">
+            <column name="city" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="address">
+            <column name="address" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="postCode">
+            <column name="post_code" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="phone">
+            <column name="phone" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="deleSign">
+            <column name="dele_sign" sql-type="tinyint(1)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

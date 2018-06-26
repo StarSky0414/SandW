@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="db.po.CommodityBean" table="commodity" schema="sandw">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+            <generator class="identity"/>
+        </id>
+        <property name="photoDoc">
+            <column name="photo_doc" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="brandId">
+            <column name="brand_id" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="showState">
+            <column name="show_state" sql-type="tinyint(4)" not-null="true"/>
+        </property>
+        <property name="shotDescribe">
+            <column name="shot_describe" sql-type="varchar(300)" length="300" not-null="true"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="tinyint(4)" not-null="true"/>
+        </property>
+        <property name="bigRange">
+            <column name="big_range" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="smallRange">
+            <column name="small_range" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="langDescribe">
+            <column name="lang_describe" sql-type="text" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

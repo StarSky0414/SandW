@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="db.po.SizeStockBean" table="size_stock" schema="sandw">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+            <generator class="identity"/>
+        </id>
+        <property name="commodityId">
+            <column name="commodity_id" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="size">
+            <column name="size" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="stockNum">
+            <column name="stock_num" sql-type="int(11)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
