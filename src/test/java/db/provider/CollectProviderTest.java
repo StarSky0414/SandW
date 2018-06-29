@@ -1,8 +1,10 @@
 package db.provider;
 
+import bean.json.CommodityJsonBean;
 import db.po.CollectBean;
 import org.junit.Test;
 import provider.CollectProvider;
+import provider.CommodityProvider;
 
 import java.util.List;
 
@@ -37,5 +39,11 @@ public class CollectProviderTest {
                 collectBeans) {
             System.out.println("id:"+collect.getId());
         }
+    }
+
+    @Test
+    public void queryCommodityByIdTest(){
+        CommodityProvider commodityProvider = new CommodityProvider();
+        CommodityJsonBean commodityInfoProviderBean = commodityProvider.queryCommodityById(1, 50);
     }
 }

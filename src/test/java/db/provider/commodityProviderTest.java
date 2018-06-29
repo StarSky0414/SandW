@@ -15,15 +15,15 @@ import java.util.List;
 public class commodityProviderTest {
     int commoditId=1;
 
-    @Test
-    public void queryCommodityByIdTest(){
-        CommodityBean commodityBean = CommodityProvider.queryCommodityById(1);
-        System.out.println(commodityBean.getBigRange());
-    }
-
-    @Test
-    public void queryCommodityByBrandTest(){
-        List<BrandBean> brandBeans = CommodityProvider.queryCommodityByBrand(4);
-        System.out.println(brandBeans.size());
-    }
+//    @Test
+//    public void queryCommodityByIdTest(){
+//        CommodityBean commodityBean = CommodityProvider.queryCommodityById(1);
+//        System.out.println(commodityBean.getBigRange());
+//    }
+//
+//    @Test
+//    public void queryCommodityByBrandTest(){
+//        List<BrandBean> brandBeans = CommodityProvider.queryCommodityByBrand(4);
+//        System.out.println(brandBeans.size());
+//    }
 }

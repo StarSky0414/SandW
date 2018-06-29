@@ -12,10 +12,11 @@ public class BrandProviderTest {
 
     @Test
     public void queryBrandInfoTest(){
-        BrandBean brandBean = BrandProvider.queryBrandInfo(1);
-        System.out.println("id:"+brandBean.getId());
-        System.out.println("Describe:"+brandBean.getBrandDescribe());
-        System.out.println("Country:"+brandBean.getBrandCountry());
+//        new
+//        BrandBean brandBean = new BrandProvider().queryBrandInfo(1);
+//        System.out.println("id:"+brandBean.getId());
+//        System.out.println("Describe:"+brandBean.getBrandDescribe());
+//        System.out.println("Country:"+brandBean.getBrandCountry());
 
     }
 }

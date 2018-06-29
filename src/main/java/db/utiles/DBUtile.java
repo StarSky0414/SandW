@@ -1,5 +1,6 @@
 package db.utiles;
 
+import bean.json.CommodityJsonBean;
 import db.po.POProvider;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

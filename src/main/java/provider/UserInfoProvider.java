@@ -39,6 +39,11 @@ public class UserInfoProvider {
         return userInfoBean.getUserNum();
     }
 
+    public static int getUserIdByName(String userName){
+        UserInfoBean userInfoBean = queryUserPassWord(userName);
+
+        return userInfoBean.getId();
+    }
 
     public static UserInfoBean queryUserInfoByNum(String userNum){
         String hql="from UserInfoBean userinfo where userinfo.userNum=:userNum";

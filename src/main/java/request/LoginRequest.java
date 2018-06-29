@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonObject;
 import db.enumeration.UserSexEnum;
 import db.po.UserInfoBean;
+import jdk.nashorn.internal.runtime.UserAccessorProperty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +33,7 @@ public class LoginRequest {
         if (LoginManager.loginInfoProve(userName, passWord)) {
             result = true;
             session = LoginManager.createSession();
-            SessionProvider.createSession(UserInfoProvider.getUserNumByName(userName), session);
+            SessionProvider.createSession(UserInfoProvider.getUserNumByName(userName), session,UserInfoProvider.getUserIdByName(userName));
         }
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("result", result);
@@ -52,7 +53,7 @@ public class LoginRequest {
         if (LoginManager.userRegister(userName, passWord, nickName)) {
             result = true;
             session = LoginManager.createSession();
-            SessionProvider.createSession(UserInfoProvider.getUserNumByName(userName), session);
+            SessionProvider.createSession(UserInfoProvider.getUserNumByName(userName), session,UserInfoProvider.getUserIdByName(userName));
         }
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("result", result);

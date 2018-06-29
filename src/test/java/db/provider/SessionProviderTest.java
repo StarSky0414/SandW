@@ -7,7 +7,7 @@ import provider.SessionProvider;
 public class SessionProviderTest {
     @Test
     public void insertProviderTest(){
-        SessionProvider.createSession("SandW000049","0e82f52628ac48aeb0d19fe0fc85fac7");
+        SessionProvider.createSession("SandW000049","0e82f52628ac48aeb0d19fe0fc85fac7",49);
     }
 
     @Test

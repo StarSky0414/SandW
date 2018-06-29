@@ -1,7 +1,7 @@
 package request;
 
-import com.alibaba.fastjson.JSONObject;
 import manager.SearchManager;
+import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -39,7 +39,7 @@ public class SearchRequest {
         HashMap<String, ArrayList> bigRangeList = SearchManager.getBrandList();
 //        JSONObject jsonObject = new JSONObject();
 //        jsonObject.put("brandlist",bigRangeList);
-        return JSONObject.toJSON(bigRangeList).toString();
+        return JSONObject.fromObject(bigRangeList).toString();
     }
 
 }

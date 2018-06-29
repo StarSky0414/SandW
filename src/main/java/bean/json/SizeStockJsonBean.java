@@ -8,15 +8,23 @@ import java.util.ArrayList;
  */
 public class SizeStockJsonBean {
 
-    public class SizeStockFormBean {
+    public class SizeStockJsonFormBean {
          public String sizeName;
          public int sizeNum;
+
+        public String getSizeName() {
+            return sizeName;
+        }
+
+        public int getSizeNum() {
+            return sizeNum;
+        }
     }
 
-    private ArrayList<SizeStockFormBean> sizeStocksList=new ArrayList<SizeStockFormBean>();
+    private ArrayList<SizeStockJsonFormBean> sizeStocksList=new ArrayList<SizeStockJsonFormBean>();
 
     public void setSizeStock(String sizeName,int sizeNum){
-        SizeStockFormBean sizeStockTestBean = new SizeStockFormBean();
+        SizeStockJsonFormBean sizeStockTestBean = new SizeStockJsonFormBean();
         sizeStockTestBean.sizeName=sizeName;
         sizeStockTestBean.sizeNum=sizeNum;
         sizeStocksList.add(sizeStockTestBean);

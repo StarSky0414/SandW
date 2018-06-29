@@ -1,13 +1,8 @@
 package manager;
 
-import db.po.BrandBean;
-import db.po.CommodityBean;
-import db.po.POProvider;
-import provider.BrandProvider;
+import bean.json.CommodityJsonBean;
 import provider.CommodityProvider;
-import utiles.BeanToMap;
-
-import java.util.HashMap;
+import provider.SizeStockProvider;
 
 /**
  * starsky  make file at 2018/6/27
@@ -15,13 +10,13 @@ import java.util.HashMap;
  */
 public class CommodityManager {
 
-    public static HashMap<String, Object> commodityInfo(int brandId){
-        CommodityBean commodityByBrand = CommodityProvider.queryCommodityById(brandId);
-        BrandBean brandBean = BrandProvider.queryBrandInfo(brandId);
-        HashMap<String, Object> commodityInfoMap = BeanToMap.mergeBeanToMap(new POProvider[]{brandBean, commodityByBrand});
-        int id = (Integer) commodityInfoMap.get("id");
+    public CommodityJsonBean commodityInfo(int commodityId, int userId){
+        CommodityProvider commodityProvider = new CommodityProvider();
+        CommodityJsonBean commodityJsonBean = commodityProvider.queryCommodityById(commodityId, userId);
+        SizeStockProvider sizeStockProvider = new SizeStockProvider();
+        commodityJsonBean.setSizeStock(sizeStockProvider.querySizeStock(commodityId));
+        return commodityJsonBean;
 
-        return commodityInfoMap;
     }
 
 

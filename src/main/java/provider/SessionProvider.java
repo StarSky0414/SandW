@@ -11,10 +11,12 @@ public class SessionProvider {
     private static class SessionBean{
         private String userNum;
         private Date createDate;
+        private int userId;
 
-        SessionBean(String userNum, Date createDate) {
+        SessionBean(String userNum, Date createDate,int userId) {
             this.userNum = userNum;
             this.createDate = createDate;
+            this.userId=userId;
         }
 
         String getUserNum() {
@@ -25,8 +27,8 @@ public class SessionProvider {
 
     private static HashMap<String,SessionBean> sessionMap=new HashMap<String, SessionBean>();
 
-    public static void createSession(String userNum , String sessionCache){
-        SessionBean sessionBean = new SessionBean(userNum, new Date());
+    public static void createSession(String userNum , String sessionCache,int userId){
+        SessionBean sessionBean = new SessionBean(userNum, new Date(),userId);
         sessionMap.put(sessionCache,sessionBean);
     }
 
@@ -34,6 +36,14 @@ public class SessionProvider {
         String userNum="";
         if (sessionMap.containsKey(sessionCache)) {
             userNum = sessionMap.get(sessionCache).getUserNum();
+        }
+        return  userNum;
+    }
+
+    public static int getUserid(String sessionCache){
+        int userNum=0;
+        if (sessionMap.containsKey(sessionCache)) {
+            userNum = sessionMap.get(sessionCache).userId;
         }
         return  userNum;
     }

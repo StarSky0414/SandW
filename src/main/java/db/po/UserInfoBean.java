@@ -18,6 +18,7 @@ public class UserInfoBean implements POProvider {
     private String userName;
     private String nickName;
 
+
     public UserInfoBean(String userName, String password,String nickName) {
         this.password = password;
         this.userName = userName;
@@ -31,6 +32,7 @@ public class UserInfoBean implements POProvider {
 
     public UserInfoBean() {
     }
+
 
     @Id
     @Column(name = "id", nullable = false)

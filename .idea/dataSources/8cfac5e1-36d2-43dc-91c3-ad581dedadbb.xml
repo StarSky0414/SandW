@@ -1126,134 +1126,140 @@
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="274" parent="239" name="PRIMARY">
+    <column id="274" parent="239" name="money">
+      <Position>10</Position>
+      <Comment>钱</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="275" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="275" parent="240" name="id">
+    <column id="276" parent="240" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="240" name="commodity_id">
+    <column id="277" parent="240" name="commodity_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="240" name="size">
+    <column id="278" parent="240" name="size">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="240" name="stock_num">
+    <column id="279" parent="240" name="stock_num">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="279" parent="240" name="PRIMARY">
+    <key id="280" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="280" parent="241" name="id">
+    <column id="281" parent="241" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="241" name="userNum">
+    <column id="282" parent="241" name="userNum">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="241" name="address_book_num">
+    <column id="283" parent="241" name="address_book_num">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="241" name="dele_sign">
+    <column id="284" parent="241" name="dele_sign">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="284" parent="241" name="PRIMARY">
+    <key id="285" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="285" parent="242" name="id">
+    <column id="286" parent="242" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="242" name="user_num">
+    <column id="287" parent="242" name="user_num">
       <Position>2</Position>
       <Comment>用户编号</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="242" name="user_name">
+    <column id="288" parent="242" name="user_name">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="242" name="password">
+    <column id="289" parent="242" name="password">
       <Position>4</Position>
       <Comment>用户密码</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="242" name="sex">
+    <column id="290" parent="242" name="sex">
       <Position>5</Position>
       <Comment>性别</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="242" name="birthday">
+    <column id="291" parent="242" name="birthday">
       <Position>6</Position>
       <Comment>出生日期</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="242" name="nickname">
+    <column id="292" parent="242" name="nickname">
       <Position>7</Position>
       <Comment>昵称</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="292" parent="242" name="user_info_user_num_uindex">
+    <index id="293" parent="242" name="user_info_user_num_uindex">
       <ColNames>user_num</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="293" parent="242" name="user_info_user_name_uindex">
+    <index id="294" parent="242" name="user_info_user_name_uindex">
       <ColNames>user_name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="294" parent="242" name="PRIMARY">
+    <key id="295" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="295" parent="242" name="user_info_user_num_uindex">
+    <key id="296" parent="242" name="user_info_user_num_uindex">
       <ColNames>user_num</ColNames>
       <UnderlyingIndexName>user_info_user_num_uindex</UnderlyingIndexName>
     </key>
-    <key id="296" parent="242" name="user_info_user_name_uindex">
+    <key id="297" parent="242" name="user_info_user_name_uindex">
       <ColNames>user_name</ColNames>
       <UnderlyingIndexName>user_info_user_name_uindex</UnderlyingIndexName>
     </key>
-    <trigger id="297" parent="242" name="user_name_cteate">
+    <trigger id="298" parent="242" name="user_name_cteate">
       <Turn>before-row</Turn>
       <Events>I</Events>
     </trigger>
