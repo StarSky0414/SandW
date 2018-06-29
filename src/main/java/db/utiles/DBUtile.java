@@ -1,10 +1,9 @@
 package db.utiles;
 
-import db.po.AddressBookBean;
 import db.po.POProvider;
-import db.po.UserAddressOptionBean;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
 
 import java.beans.IntrospectionException;
@@ -88,4 +87,16 @@ public class DBUtile {
 //        System.out.println(str+"------------");
     }
 
+
+    public static List queryInfoBySQL(String sql, List param){
+        Session session = HibernateSession.getSession();
+        Transaction transaction = session.beginTransaction();
+        NativeQuery sqlQuery = session.createSQLQuery(sql);
+        for (int i=0;i<param.size();i++){
+            sqlQuery.setParameter(i,param.get(i));
+        }
+        List list = sqlQuery.list();
+        transaction.commit();
+        return list;
+    }
 }

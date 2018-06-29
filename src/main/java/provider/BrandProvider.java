@@ -3,6 +3,7 @@ package provider;
 import db.po.BrandBean;
 import db.utiles.DBUtile;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -13,11 +14,13 @@ import java.util.List;
 public class BrandProvider {
 
     public static BrandBean queryBrandInfo(int brandId){
-        String hql="from BrandBean brand where brand.id=:id";
-        HashMap<String, Object> param = new HashMap<String, Object>();
-        param.put("id",brandId);
-        List<BrandBean> brandListInfo = DBUtile.queryInfoList(hql, param);
-        BrandBean brandInfo = brandListInfo.get(0);
-        return brandInfo;
+        String sql="select brand.brand_name,brand.brand_country,brand.brand_describe from brand where brand.id=?";
+        ArrayList param = new ArrayList();
+        param.add(brandId);
+        List brandListInfo = DBUtile.queryInfoBySQL(sql, param);
+        String brandName = (String)brandListInfo.get(0);
+        String brandCountry = (String) brandListInfo.get(1);
+        String brandDescribe = (String) brandListInfo.get(2);
+        return null;
     }
 }

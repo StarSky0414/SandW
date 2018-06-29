@@ -4,7 +4,7 @@ import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MyTool {
+public class TimeTool {
 
     public static Date StringToDate(String dateString) {
         dateString = DateFromat(dateString);

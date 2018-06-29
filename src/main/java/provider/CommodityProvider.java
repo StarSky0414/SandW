@@ -14,17 +14,7 @@ import java.util.List;
 public class CommodityProvider {
 
     public static CommodityBean queryCommodityById(int commodityBeanId){
-        String hql="from CommodityBean commodityBean where commodityBean.id=:commodityBeanId";
-        HashMap<String, Object> param = new HashMap<String, Object>();
-        param.put("commodityBeanId",commodityBeanId);
-        List<CommodityBean> commodityBeanList = DBUtile.queryInfoList(hql,param);
-        CommodityBean commodityBean;
-        if (commodityBeanList.size()!=0){
-            commodityBean= commodityBeanList.get(0);
-        }else {
-            commodityBean=new CommodityBean(0);
-        }
-        return commodityBean;
+        return null;
     }
 
     public static List<BrandBean> queryCommodityByBrand(int brandId){
@@ -34,5 +24,8 @@ public class CommodityProvider {
         List<BrandBean> brandBeanList = DBUtile.queryInfoList(hql, param);
         return brandBeanList;
     }
+
+
+
 
 }

@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonObject;
 import db.enumeration.UserSexEnum;
 import db.po.UserInfoBean;
-import manager.AddressManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +13,7 @@ import provider.UserInfoProvider;
 import manager.LoginManager;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
-import utiles.MyTool;
+import utiles.TimeTool;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -113,7 +112,7 @@ public class LoginRequest {
             logger.error("[*****] submit Error , changeUserInfo class "+ErrorMessage);
             return ErrorMessage;
         }
-        Date birthdayDate = MyTool.StringToDate(birthday);
+        Date birthdayDate = TimeTool.StringToDate(birthday);
         LoginManager.changeUserInfo(session, sex.getSexNumber(), nickName, birthdayDate,userName);
         System.out.println(sex.getSexNumber());
         return "{\"result\":true}";

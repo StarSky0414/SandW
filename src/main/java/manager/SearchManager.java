@@ -31,8 +31,7 @@ public class SearchManager {
         List<String> brandList = SearchProvider.getBrandList();
         Collections.sort(brandList);
         HashMap<String, ArrayList> resultMap = new HashMap<String, ArrayList>();
-        for (String s :
-                brandList) {
+        for (String s : brandList) {
             char c = s.charAt(0);
             c = Character.toUpperCase(c);
             if (resultMap.containsKey(String.valueOf(c))) {
