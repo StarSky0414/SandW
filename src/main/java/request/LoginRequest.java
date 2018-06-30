@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonObject;
 import db.enumeration.UserSexEnum;
 import db.po.UserInfoBean;
-import jdk.nashorn.internal.runtime.UserAccessorProperty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

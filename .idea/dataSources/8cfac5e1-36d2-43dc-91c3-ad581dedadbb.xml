@@ -1104,7 +1104,7 @@
     </column>
     <column id="270" parent="239" name="sex">
       <Position>6</Position>
-      <Comment>性别</Comment>
+      <Comment>性别  0男  1女  2儿童</Comment>
       <DataType>tinyint(4)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>

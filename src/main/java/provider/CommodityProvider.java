@@ -60,14 +60,6 @@ public class CommodityProvider {
         return commodityJsonBean;
     }
 
-    public List<BrandBean> queryCommodityByBrand(int brandId){
-        String hql="from CommodityBean commodityBean where commodityBean.brandId =:brandId";
-        HashMap<String, Object> param = new HashMap<String, Object>();
-        param.put("brandId",brandId);
-        List<BrandBean> brandBeanList = DBUtile.queryInfoList(hql, param);
-        return brandBeanList;
-    }
-
 
 
 
