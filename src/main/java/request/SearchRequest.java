@@ -1,5 +1,7 @@
 package request;
 
+import bean.json.CommendationListJsonBean;
+import com.google.gson.JsonObject;
 import manager.SearchManager;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
@@ -8,11 +10,11 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * starsky  make file at 2018/6/25
@@ -36,10 +38,44 @@ public class SearchRequest {
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value = "/search/brandlist")
     public String brandList(){
-        HashMap<String, ArrayList> bigRangeList = SearchManager.getBrandList();
+        ArrayList<HashMap> bigRangeList = SearchManager.getBrandList();
 //        JSONObject jsonObject = new JSONObject();
 //        jsonObject.put("brandlist",bigRangeList);
-        return JSONObject.fromObject(bigRangeList).toString();
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("brandList",bigRangeList);
+        return jsonObject.toString();
     }
 
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST, value = "/search/description")
+    public String descriptionVague(@RequestParam(value = "description") String desVague) {
+        SearchManager searchManager = new SearchManager();
+        ArrayList<CommendationListJsonBean> commendationListJsonBeans = searchManager.descriptionVague(desVague);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("description",commendationListJsonBeans);
+        System.out.println(jsonObject.toString());
+        return jsonObject.toString();
+    }
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST, value = "/search/rangesearch")
+    public String rangeSearch(@RequestParam(value = "rangeSearch") String rangeSearch) {
+        SearchManager searchManager = new SearchManager();
+        ArrayList<CommendationListJsonBean> commendationListJsonBeans = searchManager.rangeSearch(rangeSearch);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("rangeSearch",commendationListJsonBeans);
+        System.out.println(jsonObject.toString());
+        return jsonObject.toString();
+    }
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST, value = "/search/brandSearch")
+    public String brandSearch(@RequestParam(value = "brandSearch") String brandSearch) {
+        SearchManager searchManager = new SearchManager();
+        ArrayList<CommendationListJsonBean> commendationListJsonBeans = searchManager.brandSearch(brandSearch);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("rangeSearch",commendationListJsonBeans);
+        System.out.println(jsonObject.toString());
+        return jsonObject.toString();
+    }
 }

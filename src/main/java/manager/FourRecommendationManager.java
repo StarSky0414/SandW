@@ -1,6 +1,6 @@
 package manager;
 
-import bean.json.FourRecommendationJsonBean;
+import bean.json.CommendationListJsonBean;
 import provider.FourRecommendationProvider;
 
 import java.util.ArrayList;
@@ -17,9 +17,9 @@ public class FourRecommendationManager {
         ArrayList<HashMap<String,Object>> itemList=new ArrayList<HashMap<String, Object>>();
         for (String smallRange:smallRangesList){
             HashMap<String, Object> nameValueMAp = new HashMap<String, Object>();
-            ArrayList<FourRecommendationJsonBean> fourRecommendationJsonBean = fourRecommendationProvider.fourRecommendationBySmallRange(smallRange);
+            ArrayList<CommendationListJsonBean> CommendationListJsonBean = fourRecommendationProvider.fourRecommendationBySmallRange(smallRange);
             nameValueMAp.put("itemName",smallRange);
-            nameValueMAp.put("itemInfo",fourRecommendationJsonBean);
+            nameValueMAp.put("itemInfo", CommendationListJsonBean);
             itemList.add(nameValueMAp);
         }
         return itemList;

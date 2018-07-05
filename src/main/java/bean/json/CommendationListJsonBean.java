@@ -4,7 +4,7 @@ package bean.json;
  * starsky  make file at 2018/6/30
  * 代码是个艺术，请不要侮辱自己的审美
  */
-public class FourRecommendationJsonBean {
+public class CommendationListJsonBean {
     private int id;
     private String photoDoc;
     private String brandName;
@@ -14,7 +14,7 @@ public class FourRecommendationJsonBean {
         return id;
     }
 
-    public FourRecommendationJsonBean(int id, String photoDoc, String brandName, String money) {
+    public CommendationListJsonBean(int id, String photoDoc, String brandName, String money) {
         this.id=id;
         this.photoDoc = photoDoc;
         this.brandName = brandName;

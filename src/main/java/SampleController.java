@@ -1,3 +1,4 @@
+import db.utiles.HibernateSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.*;
@@ -11,6 +12,7 @@ import request.LoginRequest;
 import request.SearchRequest;
 
 import java.util.ArrayList;
+import java.util.logging.Handler;
 
 @Controller
 @EnableAutoConfiguration
@@ -28,6 +30,7 @@ public class SampleController {
         logger.debug("[$$$$ Debug] init userInfo : {}","SandW000050,session is 890af4e26dfa446aa8d7ee7777afbfb4 ");
 //        SpringApplication.run(LoginRequest.class, args);
 
+        HibernateSession.getSession();
         ArrayList<Object> objects = new ArrayList<Object>();
         objects.add(AddressRequest.class);
         objects.add(LoginRequest.class);

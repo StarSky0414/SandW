@@ -1,6 +1,6 @@
 package provider;
 
-import bean.json.FourRecommendationJsonBean;
+import bean.json.CommendationListJsonBean;
 import db.utiles.DBUtile;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class FourRecommendationProvider {
 
-    public ArrayList<FourRecommendationJsonBean> fourRecommendationBySmallRange(String smallRange){
+    public ArrayList<CommendationListJsonBean> fourRecommendationBySmallRange(String smallRange){
         String sql="select\n" +
                 "  commodity.id,\n" +
                 "  commodity.photo_doc,\n" +
@@ -25,18 +25,18 @@ public class FourRecommendationProvider {
         arrayList.add(smallRange);
         List list = DBUtile.queryInfoBySQL(sql, arrayList);
 
-        ArrayList<FourRecommendationJsonBean> fourRecommendationJsonBeanArrayList = new ArrayList<FourRecommendationJsonBean>();
+        ArrayList<CommendationListJsonBean> commendationListJsonBeanArrayList = new ArrayList<CommendationListJsonBean>();
         for (int i=0;i<list.size();i++){
             Object[] paramArray = (Object[]) list.get(i);
-            FourRecommendationJsonBean fourRecommendationJsonBean = new FourRecommendationJsonBean(
+            CommendationListJsonBean CommendationListJsonBean = new CommendationListJsonBean(
                     (Integer) paramArray[0],
                     (String) paramArray[1],
                     (String) paramArray[3],
                     (String) paramArray[2]);
-            fourRecommendationJsonBeanArrayList.add(fourRecommendationJsonBean);
+            commendationListJsonBeanArrayList.add(CommendationListJsonBean);
         }
 
-        return fourRecommendationJsonBeanArrayList;
+        return commendationListJsonBeanArrayList;
 
     }
 }

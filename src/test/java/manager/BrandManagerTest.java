@@ -14,7 +14,7 @@ public class BrandManagerTest {
 
     @Test
     public void getBrandListTest(){
-        HashMap<String, ArrayList> brandList = SearchManager.getBrandList();
+//        HashMap<String, ArrayList> brandList = SearchManager.getBrandList();
 //        for (String s :
 //                brandList) {
 //            System.out.println(s);
