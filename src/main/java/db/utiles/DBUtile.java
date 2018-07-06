@@ -100,4 +100,15 @@ public class DBUtile {
         transaction.commit();
         return list;
     }
+
+    public static void updateInfoBySQL(String sql, List param){
+        Session session = HibernateSession.getSession();
+        Transaction transaction = session.beginTransaction();
+        NativeQuery sqlQuery = session.createSQLQuery(sql);
+        for (int i=0;i<param.size();i++){
+            sqlQuery.setParameter(i,param.get(i));
+        }
+        sqlQuery.executeUpdate();
+        transaction.commit();
+    }
 }

@@ -6,10 +6,7 @@ import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 import provider.SessionProvider;
-import request.AddressRequest;
-import request.CommodityRequest;
-import request.LoginRequest;
-import request.SearchRequest;
+import request.*;
 
 import java.util.ArrayList;
 import java.util.logging.Handler;
@@ -36,6 +33,7 @@ public class SampleController {
         objects.add(LoginRequest.class);
         objects.add(SearchRequest.class);
         objects.add(CommodityRequest.class);
+        objects.add(ShoppingRequest.class);
         SpringApplication.run(objects.toArray(), args);
 
 
