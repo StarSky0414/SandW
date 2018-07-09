@@ -65,7 +65,7 @@ public class ShoppingProvider {
     }
 
     public void dropShopping(String userId,int commodityId,String sizeName){
-        String sql="update shopping set shopping.dele_sign=1 where shopping.user_id=? and  shopping.id in (select id from (select shopping.id from shopping ,size_stock where shopping.size_id=size_stock.id and size_stock.commodity_id=? and size_stock.size=? and shopping.dele_sign=0 limit 0,1)C )";
+        String sql="update shopping set shopping.dele_sign=1 where shopping.user_id=? and  shopping.id in (select id from (select shopping.id from shopping ,size_stock where shopping.size_id=size_stock.id and size_stock.commodity_id=? and size_stock.size=? and shopping.dele_sign=0)C )";
         ArrayList param = new ArrayList();
         param.add(Integer.valueOf(userId));
         param.add(commodityId);
@@ -75,4 +75,10 @@ public class ShoppingProvider {
 
         DBUtile.updateInfoBySQL(sql,param);
     }
+
+
+
+
+
+
 }

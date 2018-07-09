@@ -1,8 +1,11 @@
 package request;
 
+import bean.json.CommendationListJsonBean;
 import bean.json.ShoppingFormBean;
+import manager.CollectManager;
 import manager.ShoppingManager;
 import net.sf.json.JSONObject;
+import org.hibernate.Session;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -55,6 +58,48 @@ public class ShoppingRequest {
         shoppingManager.shoppingRemoveOnce(userid,commodityId,sizeName);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("Request",true);
+        return jsonObject.toString();
+    }
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST,value = "/shopping/collectshow")
+    public String collectshow(@RequestParam(value = "session")String session){
+        int userid = SessionProvider.getUserid(session);
+        CollectManager collectManager = new CollectManager();
+        ArrayList<CommendationListJsonBean> collectshow = collectManager.collectshow(userid);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("collectshow",collectshow);
+        System.out.println(jsonObject.toString());
+        return jsonObject.toString();
+    }
+
+
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST,value = "/shopping/collectinsert")
+    public String collectinsert(@RequestParam(value = "session")String session,
+                                @RequestParam(value = "commodityId")String commodityId){
+        int userid = SessionProvider.getUserid(session);
+        CollectManager collectManager = new CollectManager();
+        collectManager.collectAdd(String.valueOf(userid),commodityId);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("result",true);
+        System.out.println(jsonObject.toString());
+        return jsonObject.toString();
+    }
+
+
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST,value = "/shopping/collectdele")
+    public String collectdele(@RequestParam(value = "session")String session,
+                              @RequestParam(value = "commodityId")String commodityId){
+        int userid = SessionProvider.getUserid(session);
+        CollectManager collectManager = new CollectManager();
+        collectManager.collectdele(String.valueOf(userid),commodityId);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("result",true);
+        System.out.println(jsonObject.toString());
         return jsonObject.toString();
     }
 }

@@ -52,7 +52,8 @@ public class SearchRequest {
         SearchManager searchManager = new SearchManager();
         ArrayList<CommendationListJsonBean> commendationListJsonBeans = searchManager.descriptionVague(desVague);
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("description",commendationListJsonBeans);
+        jsonObject.put("rangeSearch",commendationListJsonBeans);
+        jsonObject.put("findkey",desVague);
         System.out.println(jsonObject.toString());
         return jsonObject.toString();
     }
@@ -64,6 +65,7 @@ public class SearchRequest {
         ArrayList<CommendationListJsonBean> commendationListJsonBeans = searchManager.rangeSearch(rangeSearch);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("rangeSearch",commendationListJsonBeans);
+        jsonObject.put("findkey",rangeSearch);
         System.out.println(jsonObject.toString());
         return jsonObject.toString();
     }
@@ -75,6 +77,7 @@ public class SearchRequest {
         ArrayList<CommendationListJsonBean> commendationListJsonBeans = searchManager.brandSearch(brandSearch);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("rangeSearch",commendationListJsonBeans);
+        jsonObject.put("findkey",brandSearch);
         System.out.println(jsonObject.toString());
         return jsonObject.toString();
     }

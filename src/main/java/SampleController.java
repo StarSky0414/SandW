@@ -33,6 +33,7 @@ public class SampleController {
         objects.add(LoginRequest.class);
         objects.add(SearchRequest.class);
         objects.add(CommodityRequest.class);
+        objects.add(RecommendRequest.class);
         objects.add(ShoppingRequest.class);
         SpringApplication.run(objects.toArray(), args);
 
