@@ -32,12 +32,13 @@ public class LoginRequest {
         if (LoginManager.loginInfoProve(userName, passWord)) {
             result = true;
             session = LoginManager.createSession();
-            SessionProvider.createSession(UserInfoProvider.getUserNumByName(userName), session,UserInfoProvider.getUserIdByName(userName));
+            SessionProvider.createSession(UserInfoProvider.getUserNumByName(userName),
+                    session,UserInfoProvider.getUserIdByName(userName));
         }
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("result", result);
         jsonObject.addProperty("session", session);
-        System.out.println(jsonObject.toString());
+        logger.info(jsonObject.toString());
         return jsonObject.toString();
     }
 

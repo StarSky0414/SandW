@@ -59,22 +59,22 @@ public class DBUtile {
         query.executeUpdate();
         transaction.commit();
     }
-
-    public static   void  upData(Map<String,Object> parmMap,POProvider poProvider) throws IntrospectionException, InvocationTargetException, IllegalAccessException, InstantiationException {
-        Session session = HibernateSession.getSession();
-        Transaction transaction = session.beginTransaction();
-        Field[] declaredFields = poProvider.getClass().getDeclaredFields();
-        for (Field field : declaredFields) {
-            String name = field.getName();
-            PropertyDescriptor propertyDescriptor = new PropertyDescriptor(name, poProvider.getClass());
-            Method writeMethod = propertyDescriptor.getWriteMethod();
-            if (parmMap.containsKey(name)) {
-                System.out.println(parmMap.get(name).getClass().toString());
-                writeMethod.invoke(poProvider, parmMap.get(name));
+    
+        public static void  upData(Map<String,Object> parmMap,POProvider poProvider) throws IntrospectionException, InvocationTargetException, IllegalAccessException {
+            Session session = HibernateSession.getSession();
+            Transaction transaction = session.beginTransaction();
+            Field[] declaredFields = poProvider.getClass().getDeclaredFields();
+            for (Field field : declaredFields) {
+                String name = field.getName();
+                PropertyDescriptor propertyDescriptor = new PropertyDescriptor(name, poProvider.getClass());
+                Method writeMethod = propertyDescriptor.getWriteMethod();
+                if (parmMap.containsKey(name)) {
+                    System.out.println(parmMap.get(name).getClass().toString());
+                    writeMethod.invoke(poProvider, parmMap.get(name));
+                }
             }
-        }
-        session.update(poProvider);
-        transaction.commit();
+            session.update(poProvider);
+            transaction.commit();
 //        System.out.println(declaredFields.length);
 //        Field f = declaredFields[0];
 //        PropertyDescriptor propertyDescriptor = new PropertyDescriptor(f.getName(), poProvider.getClass());

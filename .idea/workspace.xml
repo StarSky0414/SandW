@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3baf8607-84f4-4fd0-85a8-809e16c5a30a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/CollectManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/provider/CollectProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/request/RecommendRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/db/autoInsert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/utiles/DBUtile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/utiles/DBUtile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/LoginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/LoginManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/provider/AddressProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/AddressProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/provider/CollectProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/CollectProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/provider/ShoppingProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/ShoppingProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/request/SearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/request/SearchRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/request/ShoppingRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/request/ShoppingRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/provider/CollectProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db/provider/CollectProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/request/LoginRequest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,13 +66,6 @@
         <item name="SandW" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="sandw: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="collect: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SandW" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sandw: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="commodity: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
@@ -98,6 +90,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="collect" pinned="false" current-in-tab="false">
+        <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/collect">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="commodity" pinned="false" current-in-tab="false">
         <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/commodity">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -107,17 +108,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8cfac5e1-36d2-43dc-91c3-ad581dedadbb/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brand" pinned="false" current-in-tab="false">
-        <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/brand">
+      <file leaf-file-name="shopping" pinned="false" current-in-tab="false">
+        <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/shopping">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -125,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchRequest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/request/SearchRequest.java">
+      <file leaf-file-name="autoInsert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/db/autoInsert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+            <state relative-caret-position="221">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/request/ShoppingRequest.java">
+      <file leaf-file-name="SearchProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/provider/SearchProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="93" column="23" lean-forward="true" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+            <state relative-caret-position="1329">
+              <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecommendRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/request/RecommendRequest.java">
+      <file leaf-file-name="CollectProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/provider/CollectProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="36" column="80" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="80" />
+            <state relative-caret-position="218">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,41 +156,35 @@
       <file leaf-file-name="SizeStockProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/provider/SizeStockProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
+            <state relative-caret-position="27">
               <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/provider/CollectProvider.java">
+      <file leaf-file-name="CommodityProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/provider/CommodityProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="36" column="9" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-793">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBUtile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/db/utiles/DBUtile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+      <file leaf-file-name="size_stock" pinned="false" current-in-tab="true">
+        <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/size_stock">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SampleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SampleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="brand" pinned="false" current-in-tab="false">
+        <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/brand">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -236,9 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/db/provider/BrandProviderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bean/provider/BrandInfoProviderBean.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8cfac5e1-36d2-43dc-91c3-ad581dedadbb/console_1.sql" />
         <option value="$PROJECT_DIR$/src/test/java/db/provider/commodityProviderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/provider/CommodityInfoProviderBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/provider/BrandProvider.java" />
@@ -249,7 +232,6 @@
         <option value="$PROJECT_DIR$/src/main/java/provider/SessionProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/po/UserInfoBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/provider/UserInfoProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/request/LoginRequest.java" />
         <option value="$PROJECT_DIR$/src/test/java/db/provider/SessionProviderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/json/FourRecommendation.java" />
         <option value="$PROJECT_DIR$/src/main/java/provider/CommodityProvider.java" />
@@ -276,17 +258,21 @@
         <option value="$PROJECT_DIR$/src/main/java/bean/json/ShoppingFormBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/manager/ShoppingManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/db/provider/ShoppingProviderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/utiles/DBUtile.java" />
         <option value="$PROJECT_DIR$/src/test/java/db/provider/CollectProviderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/manager/collectManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/provider/CollectProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/manager/CollectManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/provider/ShoppingProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/request/ShoppingRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SampleController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8cfac5e1-36d2-43dc-91c3-ad581dedadbb/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/request/RecommendRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/request/SearchRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/manager/LoginManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/provider/ShoppingProvider.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8cfac5e1-36d2-43dc-91c3-ad581dedadbb/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/request/LoginRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/utiles/DBUtile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/provider/AddressProvider.java" />
+        <option value="$PROJECT_DIR$/src/test/java/db/autoInsert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/provider/CollectProvider.java" />
       </list>
     </option>
   </component>
@@ -311,9 +297,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -325,7 +311,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -357,95 +345,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
               <item name="provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
               <item name="SandW" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="enumeration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repackage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -462,15 +367,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SandW" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
@@ -501,12 +397,28 @@
               <item name="SandW" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SandW" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SandW" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SandW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SandW" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,7 +433,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="current_session_context_class&#9;PSI&#9;JAVA://org.hibernate.cfg.AvailableSettings#CURRENT_SESSION_CONTEXT_CLASS" />
+    <property name="SearchEverywhereHistoryKey" value="selectSizeId&#9;PSI&#9;JAVA://provider.ShoppingProvider#selectSizeId&#10;current_session_context_class&#9;PSI&#9;JAVA://org.hibernate.cfg.AvailableSettings#CURRENT_SESSION_CONTEXT_CLASS" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -600,7 +512,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SampleController">
+  <component name="RunManager" selected="JUnit.autoInsert.insertSizeStock">
     <configuration name="SampleController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SampleController" />
       <module name="SandW" />
@@ -622,23 +534,6 @@
       <option name="PACKAGE_NAME" value="db.provider" />
       <option name="MAIN_CLASS_NAME" value="db.provider.CollectProviderTest" />
       <option name="METHOD_NAME" value="collectSelect" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DBUtileTest.queryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SandW" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DBUtileTest" />
-      <option name="METHOD_NAME" value="queryTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -711,6 +606,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="autoInsert.insertSizeStock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SandW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="db" />
+      <option name="MAIN_CLASS_NAME" value="db.autoInsert" />
+      <option name="METHOD_NAME" value="insertSizeStock" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="SandW" type="Remote" factoryName="Remote">
       <module name="SandW" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -774,16 +692,16 @@
       <item itemvalue="Application.SampleController" />
       <item itemvalue="JUnit.ShoppingProviderTest.insertShoppingTest" />
       <item itemvalue="JUnit.ShoppingProviderTest.dropShoppingTest" />
-      <item itemvalue="JUnit.DBUtileTest.queryTest" />
       <item itemvalue="JUnit.CollectProviderTest.collectSelect" />
+      <item itemvalue="JUnit.autoInsert.insertSizeStock" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.autoInsert.insertSizeStock" />
+        <item itemvalue="JUnit.ShoppingProviderTest.insertShoppingTest" />
         <item itemvalue="Application.SampleController" />
         <item itemvalue="JUnit.CollectProviderTest.collectSelect" />
         <item itemvalue="JUnit.ShoppingProviderTest.dropShoppingTest" />
-        <item itemvalue="JUnit.DBUtileTest.queryTest" />
-        <item itemvalue="JUnit.ShoppingProviderTest.insertShoppingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -813,7 +731,10 @@
       <workItem from="1530624849077" duration="787000" />
       <workItem from="1530676489319" duration="24434000" />
       <workItem from="1530849001397" duration="15463000" />
-      <workItem from="1530889851528" duration="27903000" />
+      <workItem from="1530889851528" duration="39214000" />
+      <workItem from="1531320608906" duration="513000" />
+      <workItem from="1531321151566" duration="9856000" />
+      <workItem from="1531357303828" duration="1540000" />
     </task>
     <task id="LOCAL-00001" summary="address 更新bug">
       <created>1529334745944</created>
@@ -906,22 +827,17 @@
       <option name="project" value="LOCAL" />
       <updated>1530898878100</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="swand结束&#10;更新心愿单，购物车，搜索">
+      <created>1531153522295</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1531153522300</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShoppingProviderTest_dropShoppingTest - 2018.07.07 at 01h 09m 22s.xml">
-      <configuration name="ShoppingProviderTest.dropShoppingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingProviderTest_dropShoppingTest - 2018.07.07 at 01h 12m 10s.xml">
-      <configuration name="ShoppingProviderTest.dropShoppingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingProviderTest_dropShoppingTest - 2018.07.07 at 01h 12m 51s.xml">
-      <configuration name="ShoppingProviderTest.dropShoppingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingProviderTest_dropShoppingTest - 2018.07.07 at 01h 28m 32s.xml">
-      <configuration name="ShoppingProviderTest.dropShoppingTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ShoppingProviderTest_dropShoppingTest - 2018.07.07 at 01h 30m 54s.xml">
       <configuration name="ShoppingProviderTest.dropShoppingTest" configurationId="JUnit" />
     </history-entry>
@@ -940,9 +856,21 @@
     <history-entry file="CollectProviderTest_collectSelect - 2018.07.09 at 15h 06m 05s.xml">
       <configuration name="CollectProviderTest.collectSelect" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ShoppingProviderTest_insertShoppingTest - 2018.07.11 at 10h 19m 15s.xml">
+      <configuration name="ShoppingProviderTest.insertShoppingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="autoInsert_insertSizeStock - 2018.07.11 at 10h 48m 40s.xml">
+      <configuration name="autoInsert.insertSizeStock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="autoInsert_insertSizeStock - 2018.07.11 at 10h 49m 57s.xml">
+      <configuration name="autoInsert.insertSizeStock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="autoInsert_insertSizeStock - 2018.07.11 at 23h 04m 31s.xml">
+      <configuration name="autoInsert.insertSizeStock" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400881000" />
+    <option name="totallyTimeSpent" value="424101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -955,7 +883,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Gerrit" order="15" />
@@ -965,25 +892,24 @@
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="right" id="Remote Host" order="11" weight="0.15147454" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="6" sideWeight="0.2857143" visible="true" weight="0.14874697" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.2857143" visible="true" weight="0.14632174" />
       <window_info id="Structure" order="1" sideWeight="0.34725848" side_tool="true" weight="0.2497979" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.2497979" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.6031746" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.329806" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.04761905" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="File Transfer" order="16" weight="0.30335096" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.28747794" />
+      <window_info anchor="bottom" id="File Transfer" order="16" visible="true" weight="0.3015873" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.41093475" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.1673699" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4995958" weight="0.6694796" />
       <window_info id="Persistence" order="7" sideWeight="0.35" side_tool="true" weight="0.2497979" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4995958" weight="0.40564373" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65" visible="true" weight="0.2497979" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65" visible="true" weight="0.25383994" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
       <window_info id="Web" order="4" sideWeight="0.3996479" side_tool="true" weight="0.22231205" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -993,6 +919,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.71428573" side_tool="true" weight="0.40348527" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.04761905" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32922536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -1004,8 +931,8 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Remote Host" order="11" weight="0.15147454" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4995958" weight="0.44268078" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.52733684" />
+      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4995958" weight="0.40564373" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.46737212" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.2497979" />
       <window_info id="UI Designer" order="3" />
@@ -1019,24 +946,24 @@
       <window_info anchor="bottom" id="TODO" order="7" weight="0.329806" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Gerrit" order="15" />
-      <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.1673699" />
       <window_info anchor="right" id="Maven Projects" order="10" weight="0.3297587" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32922536" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.65" visible="true" weight="0.2497979" />
-      <window_info anchor="right" id="Database" order="6" sideWeight="0.2857143" visible="true" weight="0.14874697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65" visible="true" weight="0.2497979" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.2857143" visible="true" weight="0.14632174" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info id="Web" order="4" sideWeight="0.3996479" side_tool="true" weight="0.22231205" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" sideWeight="0.34725848" side_tool="true" weight="0.2497979" />
-      <window_info active="true" anchor="bottom" id="File Transfer" order="16" visible="true" weight="0.44620812" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="File Transfer" order="16" weight="0.30335096" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.71428573" side_tool="true" weight="0.40348527" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.6031746" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32922536" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.6031746" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1083,7 +1010,8 @@
     <MESSAGE value="商品详细信息完成&#10;商品推荐完成" />
     <MESSAGE value="搜索完成&#10;searchProvider待优化&#10;服务器初始化数据库完成" />
     <MESSAGE value="购物车完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="购物车完成" />
+    <MESSAGE value="swand结束&#10;更新心愿单，购物车，搜索" />
+    <option name="LAST_COMMIT_MESSAGE" value="swand结束&#10;更新心愿单，购物车，搜索" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1095,7 +1023,7 @@
           <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="76" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -1117,105 +1045,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/manager/AddressManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/db/provider/SessionProviderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/BrandProvider.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/AddressProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/CommodityProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/json/CommodityJsonBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1450#1451#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FourRecommendationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="21" column="68" lean-forward="true" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/request/LoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="26" column="77" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="26" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/manager/FourRecommendationManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="17" column="120" selection-start-line="17" selection-start-column="118" selection-end-line="17" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/request/RecommendationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/studyTest/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/manager/CommodityManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1231,13 +1060,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/provider/SearchBrandListInfoBean.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/request/CommodityRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/json/CommendationListJsonBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1281,29 +1103,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/po/ShoppingBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/size_stock">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/json/ShoppingFormBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1324,20 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/db/provider/ShoppingProviderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DBUtileTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1349,16 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/address_book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1373,26 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="38" column="49" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="38" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/shopping">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/SearchProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1407,23 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/collect">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/ShoppingProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
@@ -1434,44 +1176,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/request/ShoppingRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="93" column="23" lean-forward="true" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SampleController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/utiles/DBUtile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/request/RecommendRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="42">
+          <caret line="36" column="80" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/commodity">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/request/SearchRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.23/tomcat-embed-core-8.5.23-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/provider/ShoppingProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8cfac5e1-36d2-43dc-91c3-ad581dedadbb/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="27" selection-end-column="85" />
+          <caret selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/provider/ShoppingProviderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/manager/loginManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/utiles/HibernateSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/LoginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/provider/SessionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/address_book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/request/ShoppingRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2214">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/request/LoginRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/request/RecommendationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/request/CommodityRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="60" column="5" selection-start-line="46" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/address_book.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/user_address_option">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/po/ShoppingBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" selection-start-line="8" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/utiles/DBUtile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="72" column="70" lean-forward="true" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/provider/AddressProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2133">
+          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1482,40 +1326,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/CollectProvider.java">
+    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/collect">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/shopping">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/autoInsert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="221">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/provider/CommodityProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-793">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/provider/SizeStockProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
+        <state relative-caret-position="27">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/request/RecommendRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/provider/SearchProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="36" column="80" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="80" />
+        <state relative-caret-position="1329">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/request/SearchRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/provider/CollectProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+        <state relative-caret-position="218">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/commodity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8cfac5e1-36d2-43dc-91c3-ad581dedadbb/schema/sandw/table/size_stock">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

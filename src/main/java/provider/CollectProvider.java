@@ -40,6 +40,7 @@ public class CollectProvider {
     }
 
     public void collectAdd(String userId,String commodity){
+        collectdele(userId,commodity);
         CollectBean collectBean = new CollectBean(userId, commodity);
         DBUtile.saveInfo(collectBean);
     }

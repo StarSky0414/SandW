@@ -48,7 +48,6 @@ public class LoginManager {
 
     public static void changeUserInfo(String session,byte sex,String nickName,Date brithday,String userName){
         String userNum = SessionProvider.getUserNum(session);
-
         UserInfoProvider.changeUserInfo(userNum,sex,nickName,brithday,userName);
     }
 }

@@ -55,7 +55,7 @@ public class ShoppingProvider {
         DBUtile.saveInfo(shoppingBean);
     }
 
-    public int selectSizeId(int commodityId, String sizeName){
+        public int selectSizeId(int commodityId, String sizeName){
         String sql="select size_stock.id from size_stock where commodity_id=? and size=?";
         ArrayList arrayList = new ArrayList();
         arrayList.add(commodityId);
